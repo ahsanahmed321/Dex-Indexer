@@ -1,5 +1,7 @@
-type ExampleEntity @entity {
+type Liquidity @entity(immutable: true) {
   id: ID!
-  block: Bytes!
-  count: BigInt!
+  tokenA: Bytes
+  tokenB: Bytes
+  amountA: BigInt
+  amountB: BigInt
 }
